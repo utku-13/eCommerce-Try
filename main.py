@@ -26,5 +26,13 @@ def bmw():
 def saleferrari():
     return render_template('saleferrari.html', ferrari_pics = ferrari_pics)
 
+@app.route('/porsche/sale')
+def saleporsche():
+    return render_template('saleporsche.html')
+
+@app.route('/bmw/sale')
+def salebmw():
+    return render_template('salebmw.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

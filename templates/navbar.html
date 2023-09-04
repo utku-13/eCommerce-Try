@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="{{url_for('home')}}">Home</a>
+      <a class="navbar-brand" href="{{url_for('home')}}">Cars We Sale</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -13,8 +13,8 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="{{url_for('ferrari')}}">Ferrari</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="{{url_for('saleferrari')}}">Ferrari F8</a></li>
-                  <li><a class="dropdown-item" href="#">Ferrari F458</a></li>
+                  <li><a class="dropdown-item" href="{{url_for('saleferrari')}}#myCarousel">Ferrari F8</a></li>
+                  <li><a class="dropdown-item" href="{{url_for('saleferrari')}}#myCarousel1">Ferrari F458</a></li>
                 </ul>
             </li>
           <li class="nav-item dropdown">
@@ -24,8 +24,8 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{{url_for('porsche')}}">Porsche</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Porche-911</a></li>
-              <li><a class="dropdown-item" href="#">Porche-Taycan</a></li>
+              <li><a class="dropdown-item" href="{{url_for('saleporsche')}}#myCarousel">Porche-911</a></li>
+              <li><a class="dropdown-item" href="{{url_for('saleporsche')}}#myCarousel1">Porche-Taycan</a></li>
             </ul>
         </li>
           <li class="nav-item dropdown">
@@ -35,8 +35,8 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{{url_for('bmw')}}">BMW</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">i520</a></li>
-              <li><a class="dropdown-item" href="#">M5</a></li>
+              <li><a class="dropdown-item" href="{{url_for('salebmw')}}#myCarousel">i520</a></li>
+              <li><a class="dropdown-item" href="{{url_for('salebmw')}}#myCarousel1">M5</a></li>
             </ul>
         </li>
         </ul>
