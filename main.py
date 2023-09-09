@@ -3,6 +3,7 @@ from flask_bootstrap import Bootstrap
 from forms import RegisterForm, LoginForm
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_required, login_user, logout_user, current_user
+import os
 
 app = Flask(__name__)
 Bootstrap(app)
@@ -24,7 +25,7 @@ class Users(db.Model, UserMixin):
 with app.app_context():
     db.create_all()
 
-app.config['SECRET_KEY'] = '123456'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
 ferrari_pics = ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Ferrari_F8_Tributo_Genf_2019_1Y7A5665.jpg/1200px-Ferrari_F8_Tributo_Genf_2019_1Y7A5665.jpg",
                 "https://hips.hearstapps.com/hmg-prod/images/roa080120fea-ferrari-5-1598543431.jpg?crop=0.862xw:0.727xh;0,0.168xh&resize=1200:*",
