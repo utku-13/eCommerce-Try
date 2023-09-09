@@ -12,8 +12,10 @@
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>F8</h1>
+            {% if current_user.is_authenticated : %}
             <p style="color: black;font-size: larger;"> 300.000$</p>
-            <p><a  class="btn btn-lg btn-primary" href="">Buy One</a></p>
+            <p><a  class="btn btn-lg btn-primary" href="{{url_for('buy',caruwant='F8')}}">Buy One</a></p>
+            {% endif %}  
           </div>
         </div>
       </div>
@@ -22,8 +24,10 @@
         <div class="container">
           <div class="carousel-caption">
             <h1>F8</h1>
+            {% if current_user.is_authenticated : %}
             <p style="color: black;font-size: larger;"> 400.000$</p>
-            <p><a  class="btn btn-lg btn-primary" href="">Buy One</a></p>
+            <p><a  class="btn btn-lg btn-primary" href="{{url_for('buy',caruwant='F8')}}">Buy One</a></p>
+            {% endif %}  
           </div>
         </div>
       </div>
@@ -32,8 +36,10 @@
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>F8</h1>
+            {% if current_user.is_authenticated : %}
             <p style="color: black;font-size: larger;"> 350.000$</p>
-            <p><a  class="btn btn-lg btn-primary" href="">Buy One</a></p>
+            <p><a  class="btn btn-lg btn-primary" href="{{url_for('buy',caruwant='F8')}}">Buy One</a></p>
+            {% endif %}  
           </div>
         </div>
       </div>
@@ -62,8 +68,10 @@
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>F458</h1>
+            {% if current_user.is_authenticated : %}
             <p style="color: black;"> 250.000$</p>
-            <p><a  class="btn btn-lg btn-primary" href="">Buy One</a></p>
+            <p><a  class="btn btn-lg btn-primary" href="{{url_for('buy',caruwant='F458')}}">Buy One</a></p>
+            {% endif %}  
           </div>
         </div>
       </div>
@@ -72,8 +80,10 @@
         <div class="container">
           <div class="carousel-caption">
             <h1>F458</h1>
+            {% if current_user.is_authenticated : %}
             <p style="color: whitesmoke;"> 200.000$</p>
-            <p><a  class="btn btn-lg btn-primary" href="">Buy One</a></p>
+            <p><a  class="btn btn-lg btn-primary" href="{{url_for('buy',caruwant='F458')}}">Buy One</a></p>
+            {% endif %}  
           </div>
         </div>
       </div>
@@ -82,8 +92,10 @@
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>F458</h1>
+            {% if current_user.is_authenticated : %}
             <p style="color: whitesmoke;"> 150.000$</p>
-            <p><a  class="btn btn-lg btn-primary" href="">Buy One</a></p>
+            <p><a  class="btn btn-lg btn-primary" href="{{url_for('buy',caruwant='F458')}}">Buy One</a></p>
+            {% endif %}  
           </div>
         </div>
       </div>

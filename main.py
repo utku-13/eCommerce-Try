@@ -98,5 +98,9 @@ def logout():
     logout_user()
     return redirect(url_for('home'))
 
+@app.route('/buy/<string:caruwant>')
+def buy(caruwant):
+    return render_template('buynow.html', caruwant=caruwant)
+    
 if __name__ == '__main__':
     app.run(debug=True)
