@@ -1,2 +1,8 @@
 Flask
 Gunicorn
+flask_bootstrap
+flask_wtf
+flask_sqlalchemy
+flask_login
+wtforms.fields
+wtforms.validators
